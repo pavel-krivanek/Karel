@@ -8,7 +8,7 @@ The DesignBlocksJS website code relies on a sample set of projects and users on 
 
 Try it on-line here: [http://windmap.cz/playground/karel/index.html]
 
-[[https://github.com/pavel-krivanek/Karel/raw/master/images/karel-screenshot.png]]
+For more information see our [Wiki](https://github.com/pavel-krivanek/Karel/wiki)
 
 
 
