@@ -6,8 +6,9 @@ This project is based on [DesignBlocksJS project](http://code.google.com/p/scrip
 
 The DesignBlocksJS website code relies on a sample set of projects and users on a database stored in GoogleAppEngine.  To connect it to another set of users, you need to change which server this is connected to.  The server protocol is not currently documented.
 
-[[/images/karel-screenshot.png]]
+Try it on-line here: [http://windmap.cz/playground/karel/index.html]
 
+[[https://github.com/pavel-krivanek/Karel/raw/master/images/karel-screenshot.png]]
 
 
 
