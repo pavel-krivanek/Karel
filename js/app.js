@@ -122,16 +122,28 @@ function initControls(){
 	  }
 	);
 	
-
 	var uiButton = $('<div class="control" id="pencil" onClick="toggleUI();" onSelectStart="return false;"><img src="images/pencil.png"></div>');
 	uiButton.css('left', '76px');
 	uiButton.css('padding-top', '7px');
 	uiButton.css('padding-bottom', '3px');
-	$('#canvascontrols').append(playButton);
+
+  var resetButton = $('<div class="control" id="resetbutton" onClick="resetTown();" onSelectStart="return false;"><img src="images/blank.png"></div>');
+  resetButton.css('left', '75px');
+  resetButton.css('padding-top', '7px');
+  resetButton.css('padding-bottom', '3px');
+
+  var mazeButton = $('<div class="control" id="mazebutton" onClick="mazeTown();" onSelectStart="return false;"><img src="images/maze.png"></div>');
+  mazeButton.css('left', '110px');
+  mazeButton.css('padding-top', '7px');
+  mazeButton.css('padding-bottom', '3px');
+  
+  $('#canvascontrols').append(playButton);
 	$('#canvascontrols').append(stopButton);
-//	$('#canvascontrols').append(uiButton);
-	$('#canvascontrols').attr('onSelectStart','return false');
+	$('#canvascontrols').append(resetButton);
+  $('#canvascontrols').append(mazeButton);
+  $('#canvascontrols').attr('onSelectStart','return false');
 }
+
 
 function preloadIcons(){
 	var iconsArray = [];
