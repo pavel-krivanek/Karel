@@ -1,0 +1,384 @@
+/* See license.txt for license */
+
+html, body {
+	margin:0;
+	padding:0;
+  height : 100%;
+  
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;  
+}
+body{
+	text-align: center;
+	font-family: "Verdana", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	background-color: #FFF;
+	color: #777;
+	font-size: 75%;
+  padding: 0px;
+  height : 100%;
+}
+a{
+	color: #27D;
+	color: #D73BFB;
+	color: #B835B2;
+	color: #002FF5;
+	color: #71ACE2;
+	color: #698AC9;
+	color: #2222FF;
+	text-decoration: none;
+}
+a:focus, a:hover, a:active {
+	text-decoration: underline;
+}
+p {
+	line-height: 140%;
+}
+li {
+	line-height: 1.8em;
+}
+h1, h2 {
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	margin: 0 0 10px 0;
+	letter-spacing:-1px;
+}
+h1 {
+	padding: 0;
+	font-size: 3em;
+	color: #333;
+}
+h2 {
+	padding-top: 10px;
+	font-size:2em;
+}
+pre {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	overflow-x: auto;
+}
+div#page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #393939;
+	background-color: #555;
+	margin: 0 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid none solid;
+	border-width: 0px 0px 0px 0px;
+}
+div#container {
+	padding: 10px;
+}
+div#header {
+	margin: 0 0 3px 0;
+	height: 50px;
+}
+div#title {
+	margin: 0 0 8px 0;
+	padding: 3px;
+	/*padding-top: 5px;*/
+	/*padding-left: 8px;*/
+	height: 20px;
+	background-color: #EEE;
+	/*background-image: url('http://www.designblocks.net/assets/titlebar.png');*/
+	/*background-repeat: no-repeat;*/
+	border-right: 2px solid #AAA;
+	border-bottom: 2px solid #AAA;
+	color: #444;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Verdana;
+}
+div#ads {
+	clear: both;
+	padding: 12px 0 12px 66px;
+}
+div#footer {
+	clear: both;
+	margin: 0 auto;
+	padding: 10px 0 0;
+	text-align: center;
+}
+
+/* MAIN */
+
+div#moreprojects {
+	float: left;
+	clear: left;
+	height: 80px;
+	width: 260px;
+	vertical-align: middle;
+	horizontal-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+div#moreprojects a img{
+	border: 0px;
+}
+
+
+div#mainbottom {
+	height: 120px;
+	width: 1000px;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+div#tutorial {
+	float: left;
+	background-color: #777;
+	width: 990px;
+	height: 100px;
+	padding: 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+div#tutorial12{
+	float: left;
+	width: 475;
+}
+div#tutorial1{
+	color: #999;
+	width: 229px;
+	height: 100px;
+	float: left;
+	display: inline;
+	text-align: left;
+	border-right: 1px solid #777777;
+	line-height: 150%;
+	padding-left: 5px;
+}
+div#tutorial1 b{
+	color: #BBB;
+}
+div#tutorial2{
+	color: #999;
+	width: 230px;
+	height: 100px;
+	display: inline;
+	text-align: left;
+	float: right;
+	margin-left: 5px;
+	line-height: 150%;
+	padding-left: 5px;
+}
+div#tutorial2 b{
+	color: #BBB;
+}
+div#tutorial3{
+	color: #999;
+	width: 235px;
+	height: 100px;
+	float: right;
+	display: inline;
+	text-align: center;
+	line-height: 150%;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding-top: 7px;
+}
+div#tutorial3 img{
+	margin-left: 10px;
+}
+div#tutorial a{
+	color: #7EBFFF;
+	color: #EEE;
+	line-height: 130%;
+}
+div#create {
+	float: right;
+	/*background-color: #555555;*/
+	height: 150px;
+	height: 72px;
+	width: 263px;
+	font-size: 24px;
+	color: #FFF;
+	padding: 0px;
+}
+div.registerfield {
+	/*width: 200px;*/
+	/*text-align: right;*/
+	padding: 2px;
+}
+/*div#register {
+	width: 200px;
+	background-color: #FFFF00;
+}*/
+
+div#create img{
+	border: 0px;
+}
+
+/* USER */
+
+div#morerecent {
+	float: left;
+	clear: left;
+	width: 445px;
+	color: #333;
+	margin-top: 90px;
+	padding: 2px;
+	text-align: right;
+}
+
+div#privacy {
+	float: left;
+	clear: left;
+	height: 35px;
+	width: 245px;
+	background-color: #DDDDDD;
+	border: 1px double #AAA;
+	color: #333;
+	margin-top: 50px;
+	padding: 8px;
+	padding-left: 8px;
+	display: none;
+}
+
+div#privacy img{
+	/*vertical-align: middle;*/
+}
+
+/* HEADER */
+
+a img{
+	border: 0px;
+}
+
+div#login {
+	float: right;
+	color: #444;
+	line-height: 160%;
+}
+
+div#login form{
+	margin: 0px;
+}
+
+div#login input{
+	width: 150px;
+	border: 4px solid #EEEEEE;
+	margin-left: 6px;
+}
+
+div#login input.loginbutton{
+	width: 70px;
+	background-color: #EEE;
+	font-family: Verdana;
+	border: 1px solid #444;
+	height: 25px;
+}
+
+div#notification {
+	float: right;
+	clear: right;
+	background-color: #FFFFCC;
+	padding: 2px;
+}
+
+div#registerlinkdiv {
+	float: right;
+	clear: right;
+	margin-right: 8px;
+}
+
+/* THUMBNAILS */
+
+div#thumbnails{
+	position: relative;
+	width: 1000px;
+	margin: auto;
+}
+
+div#leftThumbnails {
+	position: absolute;
+	left: 0px;
+	width: 480px;
+}
+
+div#leftThumbnails img {
+	padding: 2px;
+	border: 1px solid #888;
+	margin: 5px;
+}
+
+/* CAROUSEL */
+
+ul#mycarousel {
+	clear: both;
+	padding: 0;
+	-webkit-padding-start: 0px;
+	margin: 0px;
+	height: 455px;
+}
+ul#mycarousel li {
+	float: left;
+	padding: 0;
+	margin: 0px 10px 5px 0;
+	list-style: none;
+	height: 100px;
+	width: 81px;
+}
+ul#mycarousel li.selected a.thumb {
+	/*background: #000;*/
+}
+ul#carousel img {
+	border: none;
+	display: block;
+}
+
+/* USERNAME */
+
+div#userlabel {
+	position: absolute;
+	width: 200px;
+	height: 20px;
+	background-color: #EEE;
+	margin-top: 12px;
+	padding-left: 15px;
+	z-index: 10;
+	color: #333;
+	font-weight: bold;
+	font-size: 14px;
+	-moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+}
+
+div.thumbuserlabel {
+	position: absolute;
+	top: 0px;
+	color: #FFF;
+	font-weight: bold;
+	padding: 2px;
+	padding-top: 60px;
+	padding-left: 1px;
+	height: 20px;
+	width: 75px;
+	opacity: 0.7;
+	background-color: #444;
+}
+
+ul#mycarousel a.thumb {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 99%;
+	height: 95px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
+
+img.userthumb {
+	margin-bottom: 5px;
+}
+
+
+div.pagination {
+	margin-top: -5px;
+}

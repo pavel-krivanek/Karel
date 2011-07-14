@@ -1,0 +1,274 @@
+/* See license.txt for license */
+
+/* PANE */
+
+
+
+
+div#pane {
+	position: absolute;
+	left: 0px;
+ 
+	opacity: 1.0;
+  
+  min-height: 100%;  
+  height: 520px;
+  width: 100%;
+  
+  margin-right: 100px;
+  
+	background-color: #555;
+  background-color: #413F2B;
+  background-image: url("../images/back.jpg");
+  
+  color: white;
+  /*overflow: hidden;*/
+	overflow: auto;
+/*	-moz-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+*/	-moz-user-select: none; /*disable text select*/
+}
+
+img#loadingicon {
+	position: absolute;
+	top: 240px;
+	left: 240px;
+}
+
+/* CANVAS */
+
+div#stageHolder{
+	position: absolute;
+/*	width: 340px;
+	height: 340px;
+*/	right: 0px;
+top: 45px;
+
+}
+
+canvas#stage {
+	background-color: #F00;
+	-moz-user-select: none; /*disable text select*/
+}
+
+canvas#brush {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: #F00;
+}
+
+div#canvascontrols {
+	position: absolute;
+	top: 5px;
+	right: 275px;
+	cursor: default;
+	width: 80px;
+	height: 33px;
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #BBB;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	opacity: 0.95;
+	-moz-user-select: none; /*disable text select*/
+}
+
+div.control {
+	position: absolute;
+	top: 3px;
+	cursor: default;
+	width: 18px;
+	height: 17px;
+	background-color: #444;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFF;
+	padding: 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-user-select: none; /*disable text select*/
+}
+
+div#stageprojectinfo {
+	position: absolute;
+	width: 192px;
+	height: 22px;
+	background-color: #666;
+	opacity: 0.8;
+	left: 300px;
+	top: 470px;
+	color: #FFF;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-left: 8px;
+	-moz-border-top-left-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+}
+
+/* CATEGORY SELECTOR */
+
+div#selector{
+	background-color: #222222;
+	height: 100px;
+	width: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-user-select: none; /*disable text select*/
+  
+}
+
+div.selectoritem{
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-user-select: none; /*disable text select*/
+}
+
+img.selectoritem{
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* PALETTE */
+
+div#palette {
+	background-color: #999;
+	background-color: #AAA;
+  opacity: 0.9;
+	height: 90%;
+	width: 120px;
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	padding: 5px;
+}
+
+/* BLOCKS */
+
+div.block {
+	position: absolute;
+	opacity: 1;
+	cursor: default;
+	width: auto;
+	font-weight: bold;
+	font-size: 10px;
+	/*background-color: #F00;*/
+}
+
+canvas.shape {
+	position: absolute;
+	opacity: 1;
+	cursor: default;
+	width: auto;
+	height: auto;
+	-moz-user-select: none; /*disable text select*/
+}
+
+div.label {
+	position: absolute;
+	width: auto;
+	height: auto;
+	/*background-color: #0F0;*/
+	-moz-user-select: none; /*disable text select*/
+}
+
+div.arg {
+	position: absolute;
+	color: #000;
+	width: 24px;
+	height: 12px;
+	font-weight: normal;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-top: 2px;
+	padding: 2px;
+}
+
+input.arg {
+	position: absolute;
+	background-color: #CECECE;
+	color: #000;
+	height: 10px;
+	width: 14px;
+	/*width: auto;*/
+	font-size: 9px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	padding: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border: 0px;
+	/*border-right: 1px solid #444;*/
+	/*border-top: 1px solid #444;*/
+	font-weight: bold;
+	font-family: Verdana;
+	border-left: 2px solid #888;
+	border-top: 2px solid #888;
+	border-right: 2px solid #CECECE;
+	border-bottom: 2px solid #CECECE;
+	text-align: center;
+}
+
+canvas.boolean {
+	position: absolute;
+	width: 24px;
+	height: 12px;
+}
+
+div#measureText
+{
+    position: absolute;
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    color: #FFF;
+	font-weight: bold;
+    font-size: 9px;
+    padding: 0px;
+    font-family: Verdana;
+}
+
+img.label {
+	position: absolute;
+	-moz-user-select: none; /*disable text select*/
+}
+
+/* STACKS */
+
+div.stack {
+	position: absolute;
+	cursor: default;
+}
+
+div.substack {
+	position: absolute;
+	cursor: default;
+}
+
+div.else {
+  border: 1px solid red;
+}
+
+div.feedback {
+	position: absolute;
+	height: 5px;
+	background-color: #FFF;
+}
+
+

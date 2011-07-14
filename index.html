@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Karel</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		
+		<link rel="stylesheet" href="css/site.css" type="text/css" />
+		<link rel="stylesheet" href="css/app.css" type="text/css" />
+		<link rel="stylesheet" href="css/tango/skin.css" type="text/css" />
+			
+    <script src="js/import/jquery-1.4.1.js"></script>
+    <script src="js/import/jquery-ui-1.8.custom.min.js"></script>
+
+    <script src="js/import/color.js"></script>
+
+		
+		<script src="js/icons.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/runtime.js"></script>
+    <script src="js/drawing.js"></script>
+		<script src="js/block.js"></script>
+		<script src="js/canvas.js"></script>
+		<script src="js/specs.js"></script>
+	</head>
+	
+<body onMouseMove="appMouseMove(event)" onMouseDown="appMouseDown(event)" onMouseUp="appMouseUp(event)">		
+
+<div id="page">
+				
+			
+      <div style="clear: both;"></div>
+							
+
+
+      <div id="pane">
+       <div id="palette"></div>
+        <div id="selector"></div>
+      </div>
+
+
+
+       <div id="canvascontrols">
+      </div>
+		
+			<div id="stageHolder">
+        <canvas id="townCanvas"></canvas>
+				
+			</div>
+			
+			<div style="clear: both;"></div>
+			
+	
+		</div>
+		
+		<div style="clear: both;"></div>
+		
+		<!-- <div id="footer"></div> -->
+		
+		<div id="measureText"></div>
+		
+		<script type="text/javascript">
+
+      var imagesLoaded = false, documentLoaded = false;
+
+      var images = new Image();
+      images.src = "images/karel.png";
+      images.onload = (function() {
+        imagesLoaded = true;
+        if (imagesLoaded && documentLoaded) appInit();
+      });
+
+      jQuery(document).ready(
+				function($) {
+          documentLoaded = true;
+          if (imagesLoaded && documentLoaded) appInit();
+				}
+			);
+		</script>
+
+		
+	</body>
+
+</html>
