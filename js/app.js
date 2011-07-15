@@ -110,7 +110,7 @@ function initControls(){
 
 
 	var stopButton = $('<div class="control" id="stopControl" onClick="stop();" onSelectstart="return false;"><img id="stopButton" src="images/stopGray.png"></div>');
-	stopButton.css('left', '42px');
+	stopButton.css('left', '43px');
 	stopButton.css('padding-top', '7px');
 	stopButton.css('padding-bottom', '3px');
 	stopButton.hover(
@@ -123,24 +123,30 @@ function initControls(){
 	);
 	
 	var uiButton = $('<div class="control" id="pencil" onClick="toggleUI();" onSelectStart="return false;"><img src="images/pencil.png"></div>');
-	uiButton.css('left', '76px');
+	uiButton.css('left', '78px');
 	uiButton.css('padding-top', '7px');
 	uiButton.css('padding-bottom', '3px');
 
   var resetButton = $('<div class="control" id="resetbutton" onClick="resetTown();" onSelectStart="return false;"><img src="images/blank.png"></div>');
-  resetButton.css('left', '75px');
+  resetButton.css('left', '78px');
   resetButton.css('padding-top', '7px');
   resetButton.css('padding-bottom', '3px');
 
   var mazeButton = $('<div class="control" id="mazebutton" onClick="mazeTown();" onSelectStart="return false;"><img src="images/maze.png"></div>');
-  mazeButton.css('left', '110px');
+  mazeButton.css('left', '113px');
   mazeButton.css('padding-top', '7px');
   mazeButton.css('padding-bottom', '3px');
+  
+  var mazeButton2 = $('<div class="control" id="mazebutton2" onClick="mazeTown2();" onSelectStart="return false;"><img src="images/maze.png"></div>');
+  mazeButton2.css('left', '148px');
+  mazeButton2.css('padding-top', '7px');
+  mazeButton2.css('padding-bottom', '3px');
   
   $('#canvascontrols').append(playButton);
 	$('#canvascontrols').append(stopButton);
 	$('#canvascontrols').append(resetButton);
   $('#canvascontrols').append(mazeButton);
+  $('#canvascontrols').append(mazeButton2);
   $('#canvascontrols').attr('onSelectStart','return false');
 }
 
