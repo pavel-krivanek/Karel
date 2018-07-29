@@ -1,7 +1,7 @@
 Karel
 =====
 
-[Karel screenhshot](https://github.com/pavel-krivanek/Karel/raw/master/images/karel-screenshot.png)
+![Karel screenhshot](https://github.com/pavel-krivanek/Karel/raw/master/images/karel-screenshot.png)
 
 Try it on-line here: https://pavel-krivanek.github.io/Karel/
 
